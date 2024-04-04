@@ -17,9 +17,9 @@ if(MSVC)
     endif()
 endif()
 
-add_library(Set STATIC "src/include/unordered_set.cpp")
-target_include_directories(Set PUBLIC "include")
+add_library(MySet STATIC "src/include/unordered_set.h" "src/include/unordered_set.cc")
+target_include_directories(MySet PUBLIC "include")
 # Add source to this project's executable.
 add_executable (UnorderedSet "src/main.cpp")
 
-target_link_libraries(UnorderedSet Set)
+target_link_libraries(UnorderedSet MySet)
