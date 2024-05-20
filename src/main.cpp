@@ -35,7 +35,10 @@ int CountRepeats(const vector<int>& arr) {
 
 int main() {
   vector<int> arr = GetRandomVector(1000);
-  cout << CountRepeats(arr);
+  cout << "Count of repeated integers " << CountRepeats(arr)<<endl;
+  cout << "\nRandom filled UnorderedSet: \n" << endl;
+  UnorderedSet set(20, false);
+  set.Print();
   
 
 
